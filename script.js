@@ -7,3 +7,15 @@ document.addEventListener("DOMContentLoaded", function() {
       });
   });
 });
+
+document.getElementById("sportSwitch").addEventListener("change", function() {
+  let sportText = document.getElementById("sportText");
+
+  if (this.checked) {
+      sportText.textContent = "Football";
+      window.location.href = "football.html"; // Redirect to Football page
+  } else {
+      sportText.textContent = "Cricket";
+      window.location.href = "cricket.html"; // Redirect to Cricket page
+  }
+});
