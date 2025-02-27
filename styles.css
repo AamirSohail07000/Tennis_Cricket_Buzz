@@ -20,7 +20,7 @@ h1 {
 h5 {
   margin: 0;
   font-size: 14px;
-  color: #926204;
+  color: #f5f5f4;
 }
 
 .navbar {
@@ -39,7 +39,7 @@ h5 {
 
 .navbar a {
   text-decoration: none;
-  color: rgb(36, 9, 247);
+  color: rgb(0, 9, 1);
   font-weight: bold;
   padding: 10px 15px;
   transition: background 0.3s;
