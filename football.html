@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Football - Sports Buzz</title>
+    <link rel="icon" type="image/x-icon" href="faviconimg.webp">
     <link rel="stylesheet" href="styles.css">
     <script defer src="script.js"></script>
 </head>
 <body>
-  <header>
+  <header id="footballPage">
     <h1><img src="faviconimg.webp" alt="Sports Buzz Logo" width="100" height="100"></h1>
     <h5>Hub for local sports events</h5>
     <nav>
@@ -23,16 +24,21 @@
         </ul>
     </nav>
   </header>
+  <section id="home">
+    <h2>Welcome to sports Buzz Football Page</h2>
+    <p>Your go-to source for local and International Football tournament updates.</p>
+  
+    <!-- Toggle Switch for Cricket & Football (Moved Above Content) -->
+    <div class="switch-container">
+        <p id="sportText1">Cricket</p>
+        <label class="switch">
+            <input type="checkbox" id="sportSwitch" checked> 
+            <span class="slider round"></span>
+        </label>
+        <p id="sportText2">Football</p>
+    </div>
+  </section>
 
-  <!-- Toggle Switch for Cricket & Football (Moved Above Content) -->
-  <div class="switch-container">
-      <p id="sportText1">Cricket</p>
-      <label class="switch">
-          <input type="checkbox" id="sportSwitch" checked> 
-          <span class="slider round"></span>
-      </label>
-      <p id="sportText2">Football</p>
-  </div>
 
   <section id="matches">
     <h2>Live Match Updates</h2>
