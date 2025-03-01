@@ -8,14 +8,27 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
-document.getElementById("sportSwitch").addEventListener("change", function() {
+document.addEventListener("DOMContentLoaded", function() {
+  let sportSwitch = document.getElementById("sportSwitch");
   let sportText = document.getElementById("sportText");
 
-  if (this.checked) {
+  // Detect if the user is on football.html
+  let isFootballPage = window.location.pathname.includes("football.html");
+
+  if (isFootballPage) {
+      sportSwitch.checked = true; // Set switch to Football mode
       sportText.textContent = "Football";
-      window.location.href = "football.html"; // Redirect to Football page
   } else {
+      sportSwitch.checked = false; // Set switch to Cricket mode
       sportText.textContent = "Cricket";
-      window.location.href = "cricket.html"; // Redirect to Cricket page
   }
+
+  // Toggle between Cricket (Home) and Football page
+  sportSwitch.addEventListener("change", function() {
+      if (this.checked) {
+          window.location.href = "football.html"; // Redirect to Football page
+      } else {
+          window.location.href = "index.html"; // Redirect to Home (Cricket) page
+      }
+  });
 });
