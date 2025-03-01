@@ -10,17 +10,20 @@ document.addEventListener("DOMContentLoaded", function() {
 
 document.addEventListener("DOMContentLoaded", function() {
   let sportSwitch = document.getElementById("sportSwitch");
-  let sportText = document.getElementById("sportText");
+  let sportText2 = document.getElementById("sportText2");
+  let sportText1 = document.getElementById("sportText1");
 
   // Detect if the user is on football.html
   let isFootballPage = window.location.pathname.includes("football.html");
 
   if (isFootballPage) {
       sportSwitch.checked = true; // Set switch to Football mode
-      sportText.textContent = "Football";
+      sportText2.textContent = "Football"; 
+      sportText1.textContent = "Cricket";
   } else {
       sportSwitch.checked = false; // Set switch to Cricket mode
-      sportText.textContent = "Cricket";
+      sportText2.textContent = "Football";
+      sportText1.textContent = "Cricket";
   }
 
   // Toggle between Cricket (Home) and Football page
