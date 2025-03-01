@@ -5,9 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Football - Sports Buzz</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
-    <h1>Welcome to Football Section</h1>
-    <p>Live Football Scores and Updates</p>
+  <header>
+    <h1><img src="faviconimg.webp" alt="Sports Buzz Logo" width="100" height="100"></h1>
+    <h5>Hub for local sports events</h5>
+    <nav>
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#matches">Match Updates</a></li>
+            <li><a href="#teams">Tournaments</a></li>
+            <li><a href="#teams">Teams & Players</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#news">Chat</a></li>
+            <li><a href="#news">Contact Us</a></li>
+        </ul>
+    </nav>
+  </header>
+
+  <!-- Toggle Switch for Cricket & Football (Moved Above Content) -->
+  <div class="switch-container">
+      <label class="switch">
+          <input type="checkbox" id="sportSwitch" checked> 
+          <span class="slider round"></span>
+      </label>
+      <p id="sportText">Football</p>
+  </div>
+
+  <section id="matches">
+    <h2>Live Match Updates</h2>
+    <p>Latest live scores and match updates will be displayed here.</p>
+    <ul>
+      <li>Match 1: Team A vs Team B - Live Score: 1-1</li>
+      <li>Match 2: Team C vs Team D - Live Score: 2-0</li>
+    </ul>
+  </section>
+
+  <section id="teams">
+    <h2>Top Football Teams</h2>
+    <p>Here are some of the top teams in the tournament:</p>
+    <ul>
+      <li>Team A - 5 Wins</li>
+      <li>Team B - 4 Wins</li>
+      <li>Team C - 3 Wins</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Sports Buzz. All rights reserved.</p>
+  </footer>
 </body>
 </html>
