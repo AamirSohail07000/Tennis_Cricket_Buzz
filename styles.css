@@ -152,7 +152,7 @@ footer {
 }
 
 input:checked + .slider {
-  background-color: #9b05ff;
+  background-color: #8e4eb1;
 }
 
 input:checked + .slider:before {
